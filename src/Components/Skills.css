@@ -1,0 +1,53 @@
+.Skill{
+    background-color: rgb(19, 19, 19);
+    background: linear-gradient(34deg, rgba(18,18,18,1) 44%, rgba(29,29,29,1) 100%);
+    box-shadow: black 0px 2px 8px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Skill img{
+	width: auto;
+	height: 40px;
+	padding: 0;
+    padding-top: 10px;
+}
+
+.Skill h3{
+    font-size: 14px;
+	text-align: center;
+    padding-bottom: 5px;
+}
+
+@media all and (max-height: 1500px){
+    .Skill img{
+        height: 4vh;
+    }
+
+    .Skill h3{
+        font-size: 1.15vh;
+    }
+}
+
+@media all and (max-height: 1300px){
+    .Skill img{
+        height: 4vh;
+    }
+
+    .Skill h3{
+        font-size: 1.3vh;
+    }
+}
+
+@media all and (max-width: 800px){
+    .Skill img{
+        height: 4vh;
+    }
+
+    .Skill h3{
+        font-size: 1.15vh;
+    }
+}

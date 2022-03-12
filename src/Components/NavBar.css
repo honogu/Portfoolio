@@ -1,0 +1,146 @@
+nav{
+	height: 100%;
+	width: max-content;
+	z-index: 100;
+	position:fixed;
+	text-align:left;
+	font-size: 10px;
+	text-shadow: 1px 1px black;
+	display: flex;
+	justify-content: flex-start;
+}
+
+nav img{
+	height: 30px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+nav h1{
+	z-index: 5;
+	font-size: 11px;
+	padding-top: 2px;
+	padding-left: 11px;
+	font-weight: 200;
+}
+
+nav h2{
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+nav h3:not(.Skills h3){
+	padding-left: 10px;
+	font-size: 16px;
+}
+
+nav h4:not(#SkillTitle, #SoftwareTitle){
+	padding-top: 14px;
+	padding-left: 5px;
+	font-size: 24px;
+}
+
+.NavBar {
+	height: min-content;
+	transition: padding-left 0.25s;
+}
+
+#Flag{
+	cursor:pointer;
+}
+
+.inside{
+	display: none;
+}
+
+#LinkedInImage {
+	width: 60px;
+	height: auto;
+}
+
+.SideNavBar{
+	background-color: rgb(19, 19, 19);
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	width: 225px;
+	transition: transform .25s ease;
+	transform: translate3d(-225px, 0, 0);
+}
+
+#SkillTitle{
+	font-size: 14px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+#SoftwareTitle{
+	font-size: 14px;
+	text-align: center;
+}
+
+.Skills{
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	justify-content: center;
+}
+
+#LinkedInButton, #CVButton{
+	position: absolute;
+	cursor:pointer;
+	top: 220px;
+	width: 90px;
+	height: 25px;
+	color: white;
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 17px;
+	transform: translate3d(-225px, 0, 0);
+}
+
+#CVButton{
+	left: 100px;
+}
+
+.buttons{
+	transition: transform .25s ease;
+}
+
+.NavBar:hover ~ .SideNavBar{
+	transform: translate3d(0, 0, 0);
+}
+
+.NavBar:hover{
+	padding-left: 82px;
+	width: 143px;
+	height: 100%;
+}
+
+.NavBar:hover .buttons{
+	transform: translate3d(160px, 0px, 0);
+}
+
+#LinkedInButton:hover, #CVButton:hover{
+	border-width: 2px;
+}
+
+.NavBar:hover .inside{
+	display: inline;
+}
+
+.NavBar:hover ~ .outside{
+	display: none;
+}
+
+@media all and (max-height: 800px){
+	#SkillTitle{
+		font-size: 3vh;
+	}
+	
+	#SoftwareTitle{
+		font-size: 3vh;
+	}
+}

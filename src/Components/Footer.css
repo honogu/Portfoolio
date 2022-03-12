@@ -1,0 +1,12 @@
+footer{
+	z-index: 101;
+	position:fixed;
+	width: 100%;
+	bottom: 5px;
+	text-shadow: 1px 1px black;
+}
+
+footer h3{
+	font-size: 15px;
+	padding-left: 10px;
+}
