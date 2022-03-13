@@ -66,7 +66,7 @@ nav h4:not(#SkillTitle, #SoftwareTitle){
 	position: absolute;
 	z-index: -1;
 	top: 0;
-	bottom: -50px;
+	bottom: -60px;
 	width: 225px;
 	transition: transform .25s ease;
 	transform: translate3d(-225px, 0, 0);

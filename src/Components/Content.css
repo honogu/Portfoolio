@@ -152,7 +152,7 @@
 	position: fixed;
 	display: none;
 	top: 0;
-	bottom: -50px;
+	bottom: -60px;
 	left: 0px;
 	width: 100%;
 	z-index: 50;
@@ -235,14 +235,14 @@
 		height: 130px;
 		top: auto;
 		bottom: 40px;
-		left: 10%;
-		width: 80%;
+		left: 2.5%;
+		width: 95%;
 		visibility: hidden;
 		background-color: #242424da;
 	}
 
 	#projectText h2{
-		font-size: 2.5vw;
+		font-size: 2.8vw;
 	}
 
 	#projectText button{
