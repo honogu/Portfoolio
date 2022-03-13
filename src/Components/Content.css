@@ -1,3 +1,7 @@
+.main{
+	display: inline-block;
+}
+
 .main .content-container{
 	transition: filter 0.5s;
 }
@@ -25,10 +29,6 @@
 .project-image{
 	height: 480px;
 	overflow: hidden;
-}
-
-.main{
-	display: inline-block;
 }
 
 .project-image:not(.project-image img){
