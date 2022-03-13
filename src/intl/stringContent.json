@@ -12,6 +12,7 @@
         },
         "content": {
             "title": "Minu tööd:",
+            "note": "(vajuta projekti pildile, et näha lähemalt)",
             "button": "VAATA\\nPROJEKTI",
             "project_1_title": "1# Projekt",
             "project_1_content": "\"Praktikakohviku veebileht\"\\n2022 sain panna end proovile TalTechi IT Teaduskonna Üliõpilaskogu poolt korraldatud üritusega Praktikakohvik. Olin ürituse peakorraldaja ning veebiarendaja.",
@@ -34,6 +35,7 @@
         },
         "content": {
             "title": "My work:",
+            "note": "(press on projects image to view more)",
             "button": "VIEW\\nPROJECT",
             "project_1_title": "1# Project",
             "project_1_content": "\"Internship Café Website\"\\nIn 2022 I got to but myself to the test with an event in TalTech, such as the Internship Café. I was the main organizer and web developer of the event.",

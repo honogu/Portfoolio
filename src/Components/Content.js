@@ -28,7 +28,8 @@ const Content = () => {
 
     return (
         <div className='main'>
-            <h3>{language.content.title}</h3>
+            <h3 id='Title'>{language.content.title}</h3>
+            <h1>{language.content.note}</h1>
             <section className="content-container">
                 <div className="project-text">
                     <h3>{language.content.project_1_title}</h3>
