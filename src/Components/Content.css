@@ -148,6 +148,7 @@
 }
 
 #backgourndBlur{
+	overscroll-behavior: none;
 	position: fixed;
 	display: none;
 	top: 0; 
@@ -232,7 +233,8 @@
 		padding-top: 10px;
 		overflow: auto;
 		height: 130px;
-		top: 45px;
+		top: auto;
+		bottom: 40px;
 		left: 10%;
 		width: 80%;
 		visibility: hidden;
@@ -250,12 +252,12 @@
 	}
 
 	@keyframes openAnimationText{
-		from {transform: translate3d(0, -30px, 0); opacity: 0;}
+		from {transform: translate3d(0, 30px, 0); opacity: 0;}
 		  to {transform: translate3d(0, 0, 0); opacity: 1; visibility: visible;}
 	}
 	
 	@keyframes closeAnimationText{
-		from {transform: translate3d(0, 0, 0); opacity: 1;}
-		  to {transform: translate3d(0, -30px, 0); opacity: 0; visibility: hidden;}
+		from {transform: translate3d(0, 0, 0); opacity: 1; visibility: visible;}
+		  to {transform: translate3d(0, 30px, 0); opacity: 0;}
 	}
 }
