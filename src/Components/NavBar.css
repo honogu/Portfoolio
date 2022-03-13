@@ -90,6 +90,7 @@ nav h4:not(#SkillTitle, #SoftwareTitle){
 }
 
 #LinkedInButton, #CVButton{
+	white-space: nowrap;
 	position: absolute;
 	cursor:pointer;
 	top: 220px;

@@ -39,9 +39,9 @@ const NavBar = () => {
                 <h4 id='SoftwareTitle'>{language.LinkedIn.Software}</h4>
                 <section className='Skills'>
                     <Skill Src={'GitHub'}/>
-                    <Skill Src={'NodeJS'}/>
+                    <Skill Src={'Node.js'}/>
                     <Skill Src={'Figma'}/>
-                    <Skill Src={'Office365'}/>
+                    <Skill Src={'Office 365'}/>
                     <Skill Src={'Adobe'}/>
                 </section>
             </div>
