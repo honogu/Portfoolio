@@ -63,7 +63,6 @@ nav h4:not(#SkillTitle, #SoftwareTitle){
 
 .SideNavBar{
 	background-color: rgb(19, 19, 19);
-	height: 100%;
 	position: absolute;
 	z-index: -1;
 	top: 0;
