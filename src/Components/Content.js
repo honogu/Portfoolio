@@ -30,17 +30,17 @@ const Content = () => {
         <div className='main'>
             <h3 id='Title'>{language.content.title}</h3>
             <h1>{language.content.note}</h1>
-            <section className="content-container">
+            <section className="container-content">
                 <div className="project-text">
                     <h3>{language.content.project_1_title}</h3>
                     <h2>{language.content.project_1_content.replaceAll('\\n', '\n')}</h2>
                 </div>
                 <div onClick={() => openProject('Praktikakohvik2022')} className="project-image">
-                    <img src={secondProjectImage} alt="Praktikakohvik" className='hover'></img>
+                    <img src={secondProjectImage} alt="Praktikakohvik" id='hoverImage'></img>
                     <button><h2>{language.content.button.replaceAll('\\n', '\n')}</h2></button>
                 </div>
                 <div onClick={() => openProject('KGLan2019')} className="project-image" id='reverse1'>
-                    <img src={firstProjectImage} alt="Kg Lan 2019" className='hover'></img>
+                    <img src={firstProjectImage} alt="Kg Lan 2019" id='hoverImage'></img>
                     <button><h2>{language.content.button.replaceAll('\\n', '\n')}</h2></button>
                 </div>
                 <div className="project-text" id='reverse2'>

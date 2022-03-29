@@ -9,11 +9,6 @@ header{
 	justify-content: center;
 }
 
-.text-container{
-	width: 50%;
-	z-index: 1;
-}
-
 header h3, header h4{
 	text-align: left;
 	padding-left: 30px;
@@ -31,32 +26,24 @@ header img{
 	object-fit: cover;
 }
 
+.container-text{
+	width: 50%;
+	z-index: 1;
+}
+
 @media all and (max-width: 800px){
 	header{
 		padding-top: 55px;
-	}
-
-	header h3, header h4{
-		text-align: center;
-		padding: 0;
-	}
-
-	header h3, header h4{
-		padding-top: 5px;
-		text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.596);
-	}
-
-	header, .content-container{
 		margin-left: 5%;
 		margin-right: 5%;
 		width: 90%;
 	}
 
-	.text-container{
-		width: 100%;
-		position: absolute;
-		margin-top: -18px;
-		z-index: 1;
+	header h3, header h4{
+		text-align: center;
+		padding: 0;
+		padding-top: 5px;
+		text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.596);
 	}
 
 	header img{
@@ -65,5 +52,12 @@ header img{
 		aspect-ratio: 1 / 1;
 		width: 100%;
 		height: auto;
+	}
+
+	.container-text{
+		width: 100%;
+		position: absolute;
+		margin-top: -18px;
+		z-index: 1;
 	}
 }

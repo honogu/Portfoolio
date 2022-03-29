@@ -8,7 +8,7 @@ function Layout() {
     return (
         <>
             <NavBar/>
-            <div className='container'>
+            <div className='container-main'>
                 <Header/>
                 <Content/>
                 <Footer/>

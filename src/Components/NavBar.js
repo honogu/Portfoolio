@@ -14,17 +14,17 @@ const NavBar = () => {
 
     return (
         <nav>
-            <div className='NavBar'>
+            <div className='MainNavBar'>
                 <img src={LinkedInLogo} alt="LinkedIn Logo" id='LinkedInHover'/>
-                <img src={require("../img/svg/" + value + "_lipp.svg")} alt="Language Flag" onClick={ () => (value === 'en') ? setValue('et') : setValue('en') } id='Flag' className='inside'/>
-                <div className='buttons'>
+                <img src={require("../img/svg/" + value + "_lipp.svg")} alt="Language Flag" onClick={ () => (value === 'en') ? setValue('et') : setValue('en') } id='inside' className='Flag'/>
+                <div className='container-buttons'>
                     <a href='https://www.linkedin.com/in/honogu' rel="noreferrer" target="_blank"><button id='LinkedInButton'>{language.LinkedIn.LinkedInButton}</button></a>
                     <a href={PDFFileLink} rel="noreferrer" target="_blank"><button id='CVButton'>{language.LinkedIn.CVButton}</button></a>
                 </div>
             </div>
-            <img src={require("../img/svg/" + value + "_lipp.svg")} alt="Language Flag" onClick={ () => (value === 'en') ? setValue('et') : setValue('en') } id='Flag' className='outside'/>
-            <div className='SideNavBar'>
-                <h4>Linked</h4><img src={LinkedInProfile} alt='LinkedIn Profile' id='LinkedInImage'/>
+            <img src={require("../img/svg/" + value + "_lipp.svg")} alt="Language Flag" onClick={ () => (value === 'en') ? setValue('et') : setValue('en') } id='outside' className='Flag'/>
+            <div className='SecondNavBar'>
+                <h4>Linked</h4><img src={LinkedInProfile} alt='LinkedIn Profile' id='LinkedInProfileImage'/>
                 <h3>Holger Nõgu</h3>
                 <h2>{language.LinkedIn.description}</h2>
                 <h4 id='SkillTitle'>{language.LinkedIn.Programming}</h4>

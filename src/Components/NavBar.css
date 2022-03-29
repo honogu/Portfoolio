@@ -43,25 +43,33 @@ nav h4:not(#SkillTitle, #SoftwareTitle){
 	font-size: 24px;
 }
 
-.NavBar {
+.MainNavBar {
 	height: min-content;
 	transition: padding-left 0.25s;
 }
 
-#Flag{
-	cursor:pointer;
-}
-
-.inside{
+#inside{
 	display: none;
 }
 
-#LinkedInImage {
+.MainNavBar:hover #inside{
+	display: inline;
+}
+
+.MainNavBar:hover ~ #outside{
+	display: none;
+}
+
+.Flag{
+	cursor:pointer;
+}
+
+#LinkedInProfileImage {
 	width: 60px;
 	height: auto;
 }
 
-.SideNavBar{
+.SecondNavBar{
 	background-color: rgb(19, 19, 19);
 	position: absolute;
 	z-index: -1;
@@ -107,38 +115,30 @@ nav h4:not(#SkillTitle, #SoftwareTitle){
 	left: 100px;
 }
 
-.buttons{
+.container-buttons{
 	transition: transform .25s ease;
 }
 
-.NavBar:hover ~ .SideNavBar{
+.MainNavBar:hover ~ .SecondNavBar{
 	transform: translate3d(0, 0, 0);
 }
 
-.NavBar:hover ~ .background{
+.MainNavBar:hover ~ .background{
 	transform: translate3d(0, 0, 0);
 }
 
-.NavBar:hover{
+.MainNavBar:hover{
 	padding-left: 82px;
 	width: 143px;
 	height: 100%;
 }
 
-.NavBar:hover .buttons{
+.MainNavBar:hover .container-buttons{
 	transform: translate3d(160px, 0px, 0);
 }
 
 #LinkedInButton:hover, #CVButton:hover{
 	border-width: 2px;
-}
-
-.NavBar:hover .inside{
-	display: inline;
-}
-
-.NavBar:hover ~ .outside{
-	display: none;
 }
 
 @media all and (max-height: 800px){
